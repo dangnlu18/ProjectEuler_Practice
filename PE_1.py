@@ -1,9 +1,10 @@
 def sums(n):
-    count = 0   
-    for num in range(n):
-        if num%3 != 0 or num%5!=0:
-            count += num
-    print(count)
+    n = n-1
+    a = 3*(n//3) * ((n//3) + 1 ) 
+    b = 5*(n//5) * ((n//5) + 1 ) 
+    c = 15*(n//15) * ((n//15)+ 1 ) 
+
+    print((a+b-c)//2)
 
 t = int(input().strip())
 for a0 in range(t):
